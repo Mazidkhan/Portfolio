@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+      text-align: center;
+      margin: 20px;
+      background-color: black;
+    }
+    img {
+      max-width: 100%;
+      height: 50%;
+      display: block;
+      margin: 0 auto;
+    }
+  
+    h1,h2,p{
+      text-align: center;
+      color: white;
+    }
+    h2{
+      color: darkturquoise;
+    }
+ 
+  </style>
+    
+<body>
+    <h1>I am Mazidulla Khan Software developer and Data Engineer</h1>
+    <img src="images/black.png" alt="Your Image">
+    
+    <div class="w3-bar w3-black">
+      <button class="w3-bar-item w3-button" onclick="openPort('qualification')">Qualifications</button>
+      <button class="w3-bar-item w3-button" onclick="openPort('internship')">Internship</button>
+      <button class="w3-bar-item w3-button" onclick="openPort('work')">Work Experience</button>
+      <button class="w3-bar-item w3-button" onclick="openPort('project')">Projects</button>
+      <button class="w3-bar-item w3-button" onclick="openPort('contact')">Contacts</button>
+    </div>
+    
+    <div id="qualification" class="portf">
+      <h2>🎓 MCA 8.34 cgpa</h2>
+      <h2>🎓 BSc.IT 8.6 cgpa</h2>
+      <h2>📚  12th 71.08 %</h2>
+      <h2>📚 10th 83.4 %</h2>
+    </div>
+    
+    <div id="internship" class="portf" style="display:none">
+      <h2>General Mills Data Engineer Jan-Jun 2023</h2>
+      <p>
+        As a Data Engineer I have developed an end to end automated datapipeline.<br>
+        I can analyze and validate the data in tableau, bigquery, excel.<br>
+        I have worked on technologies like jenkins, gcp, github, python.
+      </p>
+      <h2>CodSoft Python Programmer Sep-Oct 2023</h2>
+      <p>
+        As a python programmer I have developed apps in python, django and deployed it in github.
+      </p> 
+    </div>
+    
+    <div id="work" class="portf" style="display:none">
+      <h2>Infosys Limited Operations Executive 2019-2020</h2>
+      <p>
+        As an operations executive I was handling customer queries and inquiries in ticketing tool platfomr called service now.<br>
+        I was troubleshooting and resolving the technical issues of customers.<br> 
+        I have worked on ITDM and ITDIMS.<br>
+      </p>
+    </div>
+ 
+    <div id="project" class="portf" style="display:none">
+      <h2>IOT based Smart Garden app.</h2>
+      <p>
+        This app was made in android with java.<br>
+        It was helping farmers to monitor their garden and control the motor pump online.  <br>
+        <a href="https://github.com/Mazidkhan/Smart-Irrigation-App">Link</a>
+      </p>
+    </div>
+    
+    <div id="contact" class="portf" style="display:none">
+      <h2>🤙 9689885784</h2>
+      <h2>📧 2021.mazidulla.khan@ves.ac.in</h2>
+      <h2></h2>
+            
+    </div>
+
+    <script>
+    function openPort(port) {
+      var i;
+      var x = document.getElementsByClassName("portf");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      document.getElementById(port).style.display = "block";  
+    }
+    </script>
+    
+</body>
+</html>
